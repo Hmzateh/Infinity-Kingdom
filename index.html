@@ -31,7 +31,7 @@ src="https://www.facebook.com/tr?id=1609173570075426&ev=PageView&noscript=1"/></
   }
 
   html, body {
-    width: 100%; height: 100%;
+    width: 100%; min-height: 100%;
     overflow: hidden;
   }
 
@@ -335,12 +335,14 @@ src="https://www.facebook.com/tr?id=1609173570075426&ev=PageView&noscript=1"/></
 
   /* Game logo */
   .game-logo {
-    width: clamp(180px, 40vw, 360px);
-    max-width: 360px;
-    margin-bottom: 8px;
+    display: block;
+    width: clamp(160px, 28vw, 340px);
+    max-width: 340px;
+    height: auto;
+    margin: 0 auto 4px;
     opacity: 0;
     animation: fadeIn 0.8s ease 0.1s forwards;
-    filter: drop-shadow(0 0 18px rgba(255,179,0,0.5));
+    filter: drop-shadow(0 0 20px rgba(255,179,0,0.6));
   }
 </style>
 </head>
@@ -351,8 +353,6 @@ src="https://www.facebook.com/tr?id=1609173570075426&ev=PageView&noscript=1"/></
 
 <div class="container">
   <div class="rule"></div>
-
-  <img src="https://live.ru.promo.cdn.101xp.com/lp_en_loc_en/ik/heroes/logo-game-DnZLeWwR.png" alt="Infinity Kingdom Logo" class="game-logo">
 
   <p class="eyebrow">⚔ Epic Fantasy Strategy ⚔</p>
 
@@ -368,6 +368,9 @@ src="https://www.facebook.com/tr?id=1609173570075426&ev=PageView&noscript=1"/></
     <img src="image1.png" alt="Infinity Kingdom Hero" class="hero-frame">
     <div class="hero-corners-bottom"></div>
   </div>
+
+
+  <img src="https://live.ru.promo.cdn.101xp.com/lp_en_loc_en/ik/heroes/logo-game-DnZLeWwR.png" alt="Infinity Kingdom Logo" class="game-logo">
 
   <div class="cta-wrap">
     <a href="https://to.wendiro.com/u?k=9796a9a20d7f422080edbf4f9ee156e2&via=22457" class="cta-btn" id="cta-btn" target="_blank" rel="noopener">
